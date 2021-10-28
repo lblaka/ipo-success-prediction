@@ -11,7 +11,9 @@ IPOs are a great opportunity for growth as it allows a company to raise capital 
 
 
 # Motivation
-Normally, hot IPOs are not that telling of the "success" of a company down the line. It's mainly an indication of the short term hype that was built around it. Consequently, there tends to be a pricing / trading disparity with these types of stocks. To mitigate this problem, is there a way to make IPO stock success more predictable? 
+Normally, hot IPOs are not that telling of the "success" of a company down the line. The scatterplot below shows th weak relationship between opening day performance and average month 7 performance. Hot IPOs are mainly an indication of the short term hype that was built around it at the time of the first issue. Consequently, there tends to be a pricing / trading disparity with these types of stocks. To mitigate this problem, is there a way to make IPO stock success more predictable? 
+
+![download](https://user-images.githubusercontent.com/59107548/139280040-e9b78f4a-69e4-4afd-a5dc-c48c63c584a5.png)
 
 
 # Data  
@@ -24,6 +26,8 @@ IPO success is defined as meeting one of these two requirements:
 1. Enterprise value to revenue ratio (top 25th percentile or above 4.27x)
 2. Gross margin (top ~80th percentile or above 65%)
 
+Below are the sectors ranked by success based on this definition: 
+<img width="812" alt="Screen Shot 2021-10-28 at 10 47 30 AM" src="https://user-images.githubusercontent.com/59107548/139280428-8a10e7b1-5140-4c63-add4-b4108384f269.png">
 
 First Model Features:
 1. Sector:  is it Healthcare, Financial Services, etc.?
