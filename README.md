@@ -27,7 +27,7 @@ IPO success is defined as meeting one of these two requirements:
 2. Gross margin (top ~80th percentile or above 65%)
 
 Below are the sectors ranked by success based on this definition: 
-<img width="812" alt="Screen Shot 2021-10-28 at 10 47 30 AM" src="https://user-images.githubusercontent.com/59107548/139280428-8a10e7b1-5140-4c63-add4-b4108384f269.png">
+<img width="782" alt="Screen Shot 2021-10-28 at 10 49 13 AM" src="https://user-images.githubusercontent.com/59107548/139280722-6c373da2-4d78-4d36-b7ba-97b739ba2542.png">
 
 First Model Features:
 1. Sector:  is it Healthcare, Financial Services, etc.?
