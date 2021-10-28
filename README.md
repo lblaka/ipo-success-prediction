@@ -57,13 +57,7 @@ The XGBoost Model was accurate at predicting postives (successes) 77% of the tim
 ![model2](https://user-images.githubusercontent.com/59107548/139172623-ff6b4bda-debb-45e5-845e-0fd03547a89f.png)
 
 # Conclusion & Future Steps
-Predicting IPO success is difficult but not impossible. These models have some level of predictive power to prove that. However, there are definitely ways to improve this project which include: 
-
-Expand dataset by features and rows
-<br> 1. Enhance features to represent “timing” better
-<br> 2. Add investment managers feature
-<br>Expand to international companies 
-<br>Redefine Success to include more consistent timeline
+Predicting IPO success is difficult but not impossible. These models have some level of predictive power to prove that. However, there are definitely ways to improve this project which include. First and foremost, expanding the dataset to increase model complexity is needed -- both at the row level and feature level. Previous studies have proved that the timing of an IPO and geopolitical factors have great impact on IPO success. Features to represent this attribute might improve the model. Also, adding an investment managers categorical column might improve the model as well, since different investment managers exceute IPOs differently. Another consideration is to expand the dataset to include international companies. This would be a much later iteration of the project however. Lastly, redefining success to include a more consistent timeline is also important. While the definition is clear in this project; this data set includes older IPOs, but defines their success based off of recent financial history. This was the tradeoff for including more rows in the model.  
 
 
 
