@@ -22,9 +22,15 @@ The data comes from Yahoo Finance, IPO Scoop, and Warrington College of Business
 
 # Methods 
 
-IPO success is defined as meeting one of these two requirements:
+
+IPO success (dependent variable) is defined as meeting one of these two requirements:
 1. Enterprise value to revenue ratio (top 25th percentile or above 4.27x)
 2. Gross margin (top ~80th percentile or above 65%)
+
+The previous definition of success was defined by opening day performance. It was later changed to consider company financials, since a higher positive change of opening and closing price can indicate IPO underpricing, which is an underwriter's strategy for increasing their own returns, not the company’s. 
+
+
+Also  a major reason a company goes public is to raise capital from public investors much faster and at greater volumes. This should directly positively impact metrics like the enterprise value to revenue ratio and gross margin.
 
 Below are the sectors ranked by success based on this definition: 
 <img width="782" alt="Screen Shot 2021-10-28 at 10 49 13 AM" src="https://user-images.githubusercontent.com/59107548/139280722-6c373da2-4d78-4d36-b7ba-97b739ba2542.png">
@@ -39,12 +45,15 @@ First Model Features:
 7. Opening day performance: percentage difference between opening price and closing price on the IPO day
 
 Second Model Features:
-<br> ..include all first model features sd well as Month 7 performance, defined by the average percentage difference between opening prices and closing prices of month 7. 
+1. All First Model features
+2. Month 7 performance: average percentage difference between opening prices and closing prices of month 7
+
 
 This is a visual representation of the data set, and how the data sources were combined: 
 
 <img width="815" alt="data_outline" src="https://user-images.githubusercontent.com/59107548/139172469-e1ed96b5-413e-4db5-997f-49471bd2ce03.png">
 
+The Removed data included only SEC data, and was removed because the dataset reduced to only a few hundred rows when merging the SEC data. 
 
 
 # Results
@@ -65,7 +74,4 @@ On the unseen data, the XGBoost Model was accurate at predicting postives (succe
 
 # Conclusion & Future Steps
 Predicting IPO success is difficult but not impossible. These models have some level of predictive power to prove that. However, there are definitely ways to improve this project. First and foremost, expanding the dataset to increase model complexity is needed -- both at the row level and feature level. Previous studies have proved that the timing of an IPO and geopolitical factors have great impact on IPO success. Features to represent this attribute might improve the model. Also, adding an investment managers categorical column might improve the model as well, since different investment managers exceute IPOs differently. Another consideration is to expand the dataset to include international companies. This would be a much later iteration of the project however. Lastly, redefining success to include a more consistent timeline is also important. While the definition is clear in this project; this data set includes older IPOs, but defines their success based off of recent financial history. This was the tradeoff for including more rows in the model.  
-
-
-
 
