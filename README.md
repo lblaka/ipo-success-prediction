@@ -5,7 +5,7 @@ By: Lorela Blaka
 # Background
 
 
-An IPO is when a private company transitions to public by offering shares to the public market. Companies looking to IPO must hire investment banks, who act as brokers during IPO process, to help guage demand, price, and sell the stock to investors. These companies must also meet the requirements by the SEC to hold an IPO. 
+An IPO is when a private company transitions to public by offering shares to the public market. Companies looking to IPO must hire investment banks, who act as brokers during the IPO process, to help guage demand, price, and sell the stock to investors. These companies must also meet the requirements by the SEC to hold an IPO. 
 
 IPOs are a great opportunity for growth as it allows a company to raise capital from public investors much faster and at greater volumes. 
 
@@ -39,10 +39,9 @@ First Model Features:
 7. Opening day performance: percentage difference between opening price and closing price on the IPO day
 
 Second Model Features:
-<br> ..include all first model features and:
-<br> 8. Month 7 performance: average percentage difference between opening prices and closing prices of month 7
+<br> ..include all first model features sd well as Month 7 performance, defined by the average percentage difference between opening prices and closing prices of month 7. 
 
-This is a picture of the data set, and how the data sources were combined: 
+This is a visual representation of the data set, and how the data sources were combined: 
 
 <img width="815" alt="data_outline" src="https://user-images.githubusercontent.com/59107548/139172469-e1ed96b5-413e-4db5-997f-49471bd2ce03.png">
 
@@ -50,13 +49,17 @@ This is a picture of the data set, and how the data sources were combined:
 
 # Results
 
+As aforementioned, the difference between my two models is Model 2 includes Month 7 Avg Change. For each dataset, I ran a Gridsearch for both Random Forest and XGBoost classifiers to find the optimal hyper parameters. Tested the hyper parameters, and found that Random Forest performed better for the first dataset, and XGBoost performed better for the second dataset. 
+
+For model validation, I focused on how precise my model was at predicting successes our of the total amount of times it predicted successes (macro precision score). 
+
 Model 1 Results: 
-The Random Forest Model was accurate at predicting postives (successes) 77% of the time: 
+On the unseen data, the Random Forest Model was accurate at predicting postives (successes) 75.4% of the time: 
 
 ![model1](https://user-images.githubusercontent.com/59107548/139172606-c3d5e797-a978-4555-952e-64f5beed3b36.png)
 
 Model 2 Results: 
-The XGBoost Model was accurate at predicting postives (successes) 77% of the time: 
+On the unseen data, the XGBoost Model was accurate at predicting postives (successes) 62.9% of the time: 
 
 ![model2](https://user-images.githubusercontent.com/59107548/139172623-ff6b4bda-debb-45e5-845e-0fd03547a89f.png)
 
