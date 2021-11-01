@@ -11,7 +11,7 @@ IPOs are a great opportunity for growth as it allows a company to raise capital 
 
 
 # Motivation
-Normally, hot IPOs are not that telling of the "success" of a company down the line. The scatterplot below shows th weak relationship between opening day performance and average month 7 performance. Hot IPOs are mainly an indication of the short term hype that was built around it at the time of the first issue. Consequently, there tends to be a pricing / trading disparity with these types of stocks. To mitigate this problem, is there a way to make IPO stock success more predictable? 
+Normally, hot IPOs are not that telling of the "success" of a company down the line. The scatterplot below shows the weak relationship between opening day performance and average month 7 performance. Hot IPOs are mainly an indication of the short term hype that was built around it at the time of the first issue. Consequently, there tends to be a pricing / trading disparity with these types of stocks. To mitigate this problem, is there a way to make IPO stock success more predictable? 
 
 ![download](https://user-images.githubusercontent.com/59107548/139280040-e9b78f4a-69e4-4afd-a5dc-c48c63c584a5.png)
 
