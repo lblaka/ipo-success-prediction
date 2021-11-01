@@ -21,7 +21,9 @@ The data comes from Yahoo Finance, IPO Scoop, and Warrington College of Business
 
 
 # Methods 
-
+1. Success definition
+2. Model 1 Features
+3. Model 2 Features 
 
 IPO success (dependent variable) is defined as meeting one of these two requirements:
 1. Enterprise value to revenue ratio (top 25th percentile or above 4.27x)
